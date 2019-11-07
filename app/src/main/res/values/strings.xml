@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UI</string>
+
+
+    <string name="ui_pay_customer_service">如遇到充值问题，请联系客服解决\n\t\t\t\t\t\t客服qq:123456789</string>
+    <string name="ui_pay__customer_phone">客服qq:123456789</string>
+</resources>

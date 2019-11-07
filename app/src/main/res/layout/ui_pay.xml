@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/ui_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/ui_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付单选"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/ui_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ui_back_white"/>
+
+        <ImageView
+            android:id="@+id/ui_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ui_question"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ui_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ui_navigation"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/ui_productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99元宝"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6.00元"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/ui_productName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户：Byron"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ui_userInfo"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/ui_pay_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/ui_pay_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_shape"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp" />
+    </LinearLayout>
+</RelativeLayout>
